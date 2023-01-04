@@ -30,6 +30,12 @@ main{
                 color: $main-color;
                 background-color: unset;
             }
+            @media (max-width:992px) {
+                @include margin(0 25px 0 0);
+                &:last-child{
+                    margin: 0 !important;
+                }
+            }
         }
         .active-btn{
             background-color: $main-color;

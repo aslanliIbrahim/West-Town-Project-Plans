@@ -39,6 +39,15 @@ main .button-group .btnn a {
   background-color: unset;
 }
 
+@media (max-width: 992px) {
+  main .button-group .btnn {
+    margin: 0 25px 0 0;
+  }
+  main .button-group .btnn:last-child {
+    margin: 0 !important;
+  }
+}
+
 main .button-group .active-btn {
   background-color: #4fb6a8;
 }
