@@ -1,0 +1,123 @@
+main {
+  overflow: hidden;
+}
+
+main .button-group {
+  padding: 0;
+  margin: 0 0 40px 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .button-group .btnn {
+  padding: 8px 13px;
+  margin: 0 50px 0 0;
+  border: 1px solid #4fb6a8;
+  border-radius: 4px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  font-size: 16px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+main .button-group .btnn a {
+  color: #4fb6a8;
+  background-color: unset;
+}
+
+main .button-group .active-btn {
+  background-color: #4fb6a8;
+}
+
+main .button-group .active-btn a {
+  color: #FFFF !important;
+}
+
+main .heading-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .heading-area span {
+  font-size: 32px;
+  color: #af9d89;
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+  text-decoration: uppercase;
+}
+
+main .heading-area::after {
+  content: "";
+  width: 70px;
+  background-color: #333;
+  margin: 10px auto;
+  height: 1px;
+  display: block;
+}
+
+main .content-area {
+  margin: 0 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+main .content-area .content-card {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: 0 0 5px 5px;
+}
+
+main .content-area .content-card img {
+  width: 15vw;
+  border-radius: 5px;
+  border: 1px solid #af9d89;
+  border-radius: 5px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

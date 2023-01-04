@@ -1,0 +1,85 @@
+main{
+    overflow: hidden;
+    .button-group{
+        @include ul(
+            $pad:0,
+            $mar:0 0 40px 0,
+            $list-style:none
+        );
+        @include flexible(
+            flex,
+            center,
+            center,
+            row
+        );
+        .btnn{
+            @include padding(8px 13px);
+            @include margin(0 50px 0 0);
+            @include border( 1px solid $main-color,  4px );
+            @include textFont(
+                $line_height:24px,
+                $text_weight:400
+            );
+            @include _button(
+                $text_align:center,
+                $font_size:16px
+            );
+            transition: all 0.25s ease-in-out;
+            a{
+                // text-decoration: none;
+                color: $main-color;
+                background-color: unset;
+            }
+        }
+        .active-btn{
+            background-color: $main-color;
+           a{
+            color: $white !important;
+           }
+        }
+    }
+    .heading-area{
+        @include flexible(
+            flex,
+            center,
+            center,
+            column
+        );
+        span{
+            @include textFont(
+                $f_size:32px,
+                $f_color:$gold-color,
+                $text_decaration:uppercase
+            );
+        }
+        &::after{
+            content: "";
+            width: 70px;
+            background-color: $black;
+            margin: 10px auto;
+            height: 1px;
+            display: block;
+        }
+    }
+    .content-area{
+        @include margin(0 0 15px 0);
+        @include flexible(
+            flex,
+            center,
+            center,
+            row
+        );
+        flex-wrap: wrap;
+        width: 100%;
+        .content-card{
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            @include margin(0 0 5px 5px);
+            img{
+                width: 15vw;
+                border-radius: 5px;
+                @include border(1px solid $gold-color, 5px);
+            }
+        }
+    }
+}
